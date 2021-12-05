@@ -8,6 +8,11 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownItAnchor = require('markdown-it-anchor')
 
 module.exports = function (eleventyConfig) {
+
+	eleventyConfig.addWatchTarget('tailwind.config.js')
+	eleventyConfig.addWatchTarget('./src/css/tailwind.css')
+	eleventyConfig.addWatchTarget('./src/css/styles.css')
+
 	eleventyConfig.addPassthroughCopy('./src/css/styles.css')
 	eleventyConfig.addPassthroughCopy('./src/browserconfig.xml')
 	eleventyConfig.addPassthroughCopy('./src/site.webmanifest')
@@ -53,7 +58,7 @@ module.exports = function (eleventyConfig) {
 	})
 
 	// https://github.com/eeeps/eleventy-respimg
-	eleventyConfig.cloudinaryCloudName = 'kailoon'
+	eleventyConfig.cloudinaryCloudName = 'ianhobbs-media'
 	eleventyConfig.srcsetWidths = [
 		{ w: 400, v: 400 },
 		{ w: 600, v: 600 },
