@@ -12,9 +12,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget('tailwind.config.js')
 	eleventyConfig.addWatchTarget('./src/css/tailwind.css')
 	eleventyConfig.addWatchTarget('./src/css/styles.css')
-
 	eleventyConfig.addPassthroughCopy('./src/css/styles.css')
 	eleventyConfig.addPassthroughCopy('./src/browserconfig.xml')
+	eleventyConfig.addPassthroughCopy({'./node_modules/alpinejs/dist/cdn.js': './js/alpine.js',})
 	eleventyConfig.addPassthroughCopy('./src/site.webmanifest')
 	eleventyConfig.addPassthroughCopy('./src/admin/config.yml')
 	eleventyConfig.addPassthroughCopy('./src/img')
@@ -66,7 +66,7 @@ module.exports = function (eleventyConfig) {
 		{ w: 820, v: 820 },
 		{ w: 1240, v: 1240 }
 	]
-	eleventyConfig.format = 'webp'
+	eleventyConfig.format = 'webp','jpg'
 	eleventyConfig.fallbackWidth = 800
 
 	/* Markdown Overrides */

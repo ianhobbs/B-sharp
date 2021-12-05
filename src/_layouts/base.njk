@@ -61,16 +61,7 @@
   <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#603cba">
   <meta name="theme-color" content="#ffffff">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBJXMGHQ44"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KBJXMGHQ44');
-  </script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="/js/alpine.js?v={% version %}"></script>
 </head>
 
 <body
@@ -97,6 +88,17 @@ class="h-full text-black antialiased bg-gray-50 dark:bg-black dark:text-gray-200
   {% block footer %}
   {% include "../_components/_footer.njk" %}
   {% endblock %}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBJXMGHQ44"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KBJXMGHQ44');
+  </script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

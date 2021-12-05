@@ -1,27 +1,27 @@
 {
-	"name": "kailoon",
-	"url": "https://kailoon.com/",
+	"name": "codey",
+	"url": "https://dev.codey.net.au/",
 	"feed": {
-		"subtitle": "The personal and professional website of designer & developer, kailoon.",
+		"subtitle": "The personal and professional website of designer & developer, ianhobbs.",
 		"filename": "feed.xml",
 		"path": "/feed/feed.xml",
-		"id": "https://kailoon.com/"
+		"id": "https://dev.codey.net.au/"
 	},
 	"jsonfeed": {
 		"path": "/feed/feed.json",
-		"url": "https://kailoon.com/feed/feed.json"
+		"url": "https://dev.codey.net.au/feed/feed.json"
 	},
 	"author": {
-		"name": "kailoon",
-		"email": "chankailoon@gmail.com",
-		"url": "https://kailoon.com/",
-		"avatar": "https://res.cloudinary.com/kailoon/image/upload/c_scale,dpr_auto,q_auto,w_64/v1610896577/kailoon.com/avatar_ce8dgk.webp",
-		"mailtolink": "mailto:chankailoon@gmail.com?subject=Request from kailoon.com&body=Be sure to share as much info as you can on what you're trying to achieve and what sort of budget you have in place."
+		"name": "ianhobbs",
+		"email": "admin@ianhobbsmedia.com",
+		"url": "https://dev.codey.net.au/",
+		"avatar": "https://res.cloudinary.com/kailoon/image/upload/c_scale,dpr_auto,q_auto,w_64/v1610896577/dev.codey.net.au/avatar_ce8dgk.webp",
+		"mailtolink": "mailto:admin@ianhobbsmedia.com?subject=Request from dev.codey.net.au&body=Be sure to share as much info as you can on what you're trying to achieve and what sort of budget you have in place."
 	},
 	"socials": {
-		"dribbble": "https://dribbble.com/kailoon",
-		"twitter": "https://twitter.com/kailoon",
-		"linkedin": "https://linkedin.com/in/kailoon",
-		"github": "https://github.com/kailoon"
+		"instagram": "https://www.instagram.com/ianhobbs_media/",
+		"twitter": "https://twitter.com/ianHobbs_media",
+		"linkedin": "https://www.linkedin.com/in/ianhobbs/",
+		"github": "https://github.com/ianhobbs"
 	}
 }
