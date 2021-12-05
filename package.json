@@ -6,7 +6,16 @@
 		"serve": "ELEVENTY_ENV=dev npx eleventy --serve",
 		"start": "npm run serve",
 		"build": "ELEVENTY_ENV=dev npx eleventy",
-		"build:prod": "ELEVENTY_ENV=prod npx eleventy"
+		"build:prod": "ELEVENTY_ENV=prod npx eleventy",
+		"dev": "NODE_ENV=development npx eleventy --watch --serve",
+		"develop": "NODE_ENV=development npx eleventy --watch --serve",
+		"now-build": "NODE_ENV=production npm run build",
+		"debug": "DEBUG=* npx eleventy",
+		"postcss-build": "postcss src/assets/css/index.css -o src/_includes/css/index.css --config ./postcss.config.js",
+		"dev:postcss": "postcss src/css/tailwind.css -o _site/css/index.css --config ./postcss.config.js -w",
+		"dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet --serve",
+		"prod:postcss": "postcss src/css/tailwind.css -o _site/css/styles.css --config ./postcss.config.js",
+		"prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site"
 	},
 	"keywords": [
 		"11ty",
@@ -33,6 +42,9 @@
 		"tailwindcss": "^2.2.19"
 	},
 	"dependencies": {
-		"@ibm/plex": "^6.0.0"
+		"@ibm/plex": "^6.0.0",
+		"@tailwindcss/jit": "^0.1.18",
+		"cssnano": "^5.0.12",
+		"watch": "^1.0.2"
 	}
 }

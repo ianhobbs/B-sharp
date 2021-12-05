@@ -57,6 +57,7 @@ eleventyConfig.setLibrary('md', markdownLibrary)
 3. Update the site info in `metadata.json`.
 4. Update the homepage info `in data.json`.
 5. Update `about.md`.
-6. Go nuts :)
+6. Start Eleventy : `npx @11ty/eleventy --watch`
+
 
 Hope you like it ❤️

@@ -10,7 +10,6 @@ module.exports = {
 		'./.*.js',
 		'./_site/**/*.html'
 	],
-	darkMode: 'media', // or 'media' or 'class'
 	theme: {
 		colors: {
 			gray: colors.blueGray,
@@ -47,7 +46,6 @@ module.exports = {
 				'Georgia',
 				'Cambria',
 				'Times New Roman',
-				'Times',
 				'serif'
 			]
 		}
