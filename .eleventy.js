@@ -9,8 +9,6 @@ const markdownItAnchor = require('markdown-it-anchor')
 
 module.exports = function (eleventyConfig) {
 
-	eleventyConfig.addWatchTarget('tailwind.config.js')
-	eleventyConfig.addWatchTarget('./src/css/tailwind.css')
 	eleventyConfig.addWatchTarget('./src/css/styles.css')
 	eleventyConfig.addPassthroughCopy('./src/css/styles.css')
 	eleventyConfig.addPassthroughCopy('./src/browserconfig.xml')
