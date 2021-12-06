@@ -11,7 +11,9 @@
 		"develop": "NODE_ENV=development npx eleventy --watch --serve",
 		"now-build": "NODE_ENV=production npm run build",
 		"debug": "DEBUG=* npx eleventy",
-		"tokens": "blyth tokens"
+		"tokens": "blyth tokens",
+		"utile": "blyth utility add split-child breakout-button auto-grid & npm run convert",
+		"convert":"scp src/sass/blyth/split-child.css src/sass/blyth/split-child.scss && scp src/sass/blyth/breakout-button.css src/sass/blyth/breakout-button.scss && scp src/sass/blyth/auto-grid.css src/sass/blyth/auto-grid.scss"
 	},
 	"keywords": [
 		"11ty",
@@ -38,13 +40,13 @@
 	"dependencies": {
 		"@ibm/plex": "^6.0.0",
 		"cssnano": "^5.0.12",
-		"watch": "^1.0.2"
+		"watch": "^0.13.0"
 	},
 	"bin": {
-    "blyth": "node_modules/@bly-th/css/src/index.js"
-  },
+		"blyth": "node_modules/@bly-th/css/src/index.js"
+	},
 	"blyth": {
-    "tokensOutputPath": "src/sass/css/tokens.css",
-    "utilityOutputPath": "src/sass/css/"
-  }
+		"tokensOutputPath": "src/sass/blyth/tokens.css",
+		"utilityOutputPath": "src/sass/blyth/"
+	}
 }
