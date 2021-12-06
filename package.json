@@ -11,20 +11,13 @@
 		"develop": "NODE_ENV=development npx eleventy --watch --serve",
 		"now-build": "NODE_ENV=production npm run build",
 		"debug": "DEBUG=* npx eleventy",
-		"tokens": "blyth tokens",
+		"tokens": "blyth tokens"
 	},
 	"keywords": [
 		"11ty",
 		"eleventy",
 		"purgecss"
 	],
-	"bin": {
-    "blyth": "node_modules/@bly-th/css/src/index.js"
-  },
-	"blyth": {
-    "tokensOutputPath": "src/sass/css/tokens.css",
-    "utilityOutputPath": "src/sass/css/"
-  },
 	"author": "kailoon + ianhobbs",
 	"license": "ISC",
 	"devDependencies": {
@@ -46,5 +39,12 @@
 		"@ibm/plex": "^6.0.0",
 		"cssnano": "^5.0.12",
 		"watch": "^1.0.2"
-	}
+	},
+	"bin": {
+    "blyth": "node_modules/@bly-th/css/src/index.js"
+  },
+	"blyth": {
+    "tokensOutputPath": "src/sass/css/tokens.css",
+    "utilityOutputPath": "src/sass/css/"
+  }
 }
