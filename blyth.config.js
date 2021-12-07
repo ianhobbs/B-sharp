@@ -5,6 +5,7 @@ const theme = {
   },
   colors: {
     primary: '#ff00ff',
+    primary_lighter: '#ff00ff',
     light: '#ffffff',
     dark: '#252525',
   },
