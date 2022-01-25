@@ -13,7 +13,7 @@
 		"debug": "DEBUG=* npx eleventy",
 		"tokens": "blyth tokens",
 		"utile": "blyth utility add split-child breakout-button auto-grid & npm run convert",
-		"convert":"scp src/sass/blyth/split-child.css src/sass/blyth/split-child.scss && scp src/sass/blyth/breakout-button.css src/sass/blyth/breakout-button.scss && scp src/sass/blyth/auto-grid.css src/sass/blyth/auto-grid.scss"
+		"convert": "scp src/sass/blyth/split-child.css src/sass/blyth/split-child.scss && scp src/sass/blyth/breakout-button.css src/sass/blyth/breakout-button.scss && scp src/sass/blyth/auto-grid.css src/sass/blyth/auto-grid.scss"
 	},
 	"keywords": [
 		"11ty",
@@ -23,14 +23,14 @@
 	"author": "kailoon + ianhobbs",
 	"license": "ISC",
 	"devDependencies": {
-		"@11ty/eleventy": "^0.12.1",
+		"@11ty/eleventy": "^1.0.0",
 		"@11ty/eleventy-navigation": "^0.1.6",
 		"@11ty/eleventy-plugin-rss": "^1.1.1",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
 		"alpinejs": "^3.7.0",
 		"autoprefixer": "^10.4.0",
 		"luxon": "^1.28.0",
-		"markdown-it": "^10.0.0",
+		"markdown-it": "^12.3.2",
 		"markdown-it-anchor": "^7.0.2",
 		"markdown-it-link-attributes": "^3.0.0",
 		"nunjucks": "^3.2.3",
